@@ -1,3 +1,5 @@
+import words from './words.js'
+
 const wordEl = document.getElementById('word');
 const wrongLettersEl = document.getElementById('wrong-letters');
 const playAgainBtn = document.getElementById('play-button');
@@ -8,7 +10,9 @@ const finalMessageRevealWord = document.getElementById('final-message-reveal-wor
 
 const figureParts = document.querySelectorAll('.figure-part');
 
-const words = ['application', 'programming', 'interface', 'wizard'];
+
+
+// const words = ['application', 'programming', 'interface', 'wizard'];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
